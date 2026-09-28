@@ -1,18 +1,37 @@
 <?php
 
 $rotas = [
-    '/' => [
-        'controller' => 'HomeController',
-        'action' => 'index'
+    'GET' => [
+        '/' => [
+            'controller' => 'HomeController',
+            'action' => 'index'
+        ],
+
+        '/login' => [
+            'controller' => 'AuthController',
+            'action' => 'login'
+        ],
+
+        '/cadastro' => [
+            'controller' => 'AuthController',
+            'action' => 'cadastro'
+        ],
+
+        '/logout' => [
+            'controller' => 'AuthController',
+            'action' => 'logout'
+        ]
     ],
 
-    '/login' => [
-        'controller' => 'AuthController',
-        'action' => 'login'
-    ],
+    'POST' => [
+        '/login' => [
+            'controller' => 'AuthController',
+            'action' => 'autenticar'
+        ],
 
-    '/cadastro' => [
-        'controller' => 'AuthController',
-        'action' => 'cadastro'
+        '/cadastro' => [
+            'controller' => 'AuthController',
+            'action' => 'cadastrar'
+        ]
     ]
 ];
