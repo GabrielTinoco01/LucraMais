@@ -1,0 +1,32 @@
+# Banco de dados
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# Configurações
+.env
+.env.*
+config/
+
+# MVC + DAO
+app/
+
+# Dependências
+vendor/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs e temporários
+*.log
+*.tmp
+*.temp
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Uploads
+uploads/*
